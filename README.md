@@ -14,8 +14,8 @@ example)
 8 6 6 2 6 8 3 3 9 31
 ``` 
 - output : print out the colorings of the complete MxN grid, or "No Solution!" if there's no solution 
-  /t- 1 : BLACK
-  /t- 0 : WHITE  
+  - 1 : BLACK
+  - 0 : WHITE  
   
 ## How to build?
 ```
