@@ -64,7 +64,7 @@ int main (int argc, char** argv) {
 	}
     fclose(fps);
 	pclose(fin);
-    printf("\n\n---NUMBER CROSS---\n");
+    fprintf(stdout, "\n\n---NUMBER CROSS---\n");
     parse(M, N);
 
     return 0;
@@ -121,16 +121,16 @@ void parse(int M, int N){
         }
     }
     if (i==0 || j==0){
-        printf("no solution\n");
+        fprintf(stdout, "no solution\n");
     }
     else{
         for (i = 1; i <= M; i++){
             for (j = 1; j <= N; j++){
                 if (board[i][j] < 10)
-                    printf(" ");
-                printf("%d ", board[i][j]);
+                    fprintf(stdout, " ");
+                fprintf(stdout, "%d ", board[i][j]);
             }
-            printf("\n");
+            fprintf(stdout, "\n");
         }
     }
 }
